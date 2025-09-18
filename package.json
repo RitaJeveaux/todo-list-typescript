@@ -1,0 +1,21 @@
+{
+  "name": "to-do-typescript",
+  "version": "1.0.0",
+  "description": "Aplicação de linha de comando para gerenciar uma lista de tarefas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "POO",
+    "Typescript",
+    "UML"
+  ],
+  "author": "Rita Jeveaux",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
