@@ -1,11 +1,42 @@
-amos construir uma aplicação de linha de comando para gerenciar uma lista de tarefas. Essa aplicação
-deverá permitir ao usuário adicionar, listar, marcar como concluída e remover tarefas. Este problema
-simples nos permitirá explorar como a POO pode nos ajudar a organizar o código de forma mais
-eficiente.
-Para isso vamos precisar dos seguintes recursos instalados no computador:
--VsCode
--Node.js
--Typescript (instalaremos no projeto)
+# To Do List com POO e Typescript
 
+## AULA 01
+
+Construir uma aplicação de linha de comando para gerenciar uma lista de tarefas.
+
+Essa aplicação deverá permitir ao usuário:
+- Adicionar
+- Listar
+- Marcar como concluída
+- Remover tarefas
+
+Este problema simples permitirá explorar como a POO pode nos ajudar a organizar o código de forma mais eficiente.
+
+Para isso vamos precisar dos seguintes recursos instalados no computador:
+- VsCode
+- Node.js
+- Typescript (instalaremos no projeto)
+
+## Exercícios AULA 01
+
+### Remover uma Tarefa
+
+- Crie um método público `removerTarefa(id: number)` na classe `ListaDeTarefas`.
+- Este método deve encontrar e remover a tarefa com o ID fornecido.
+- Exiba uma mensagem de confirmação ou de erro caso a tarefa não seja encontrada.
+
+### Herança para Tarefas com Data Limite
+
+- Crie uma nova classe `TarefaComDataLimite` que herda de `Tarefa`.
+- Adicione uma propriedade `dataLimite` (do tipo `Date`).
+- Sobrescreva o método `listarTarefas` na classe `ListaDeTarefas` para que, se a tarefa for uma `TarefaComDataLimite`, exiba também a data limite formatada (ex: `(Entregar até: DD/MM/AAAA)`).
+
+## AULA 02
+
+### Comandos
+```sh
 npm init -y
 npm i typescript ts-node @types/node --save-dev
+npx tsc --init
+npx ts-node src/index.ts
+```
