@@ -31,12 +31,21 @@ Para isso vamos precisar dos seguintes recursos instalados no computador:
 - Adicione uma propriedade `dataLimite` (do tipo `Date`).
 - Sobrescreva o método `listarTarefas` na classe `ListaDeTarefas` para que, se a tarefa for uma `TarefaComDataLimite`, exiba também a data limite formatada (ex: `(Entregar até: DD/MM/AAAA)`).
 
-## AULA 02
 
 ### Comandos
+
+
+Para instalar o projeto:
+
 ```sh
 npm init -y
 npm i typescript ts-node @types/node --save-dev
 npx tsc --init
+```
+
+
+Para executar o projeto:
+
+```sh
 npx ts-node src/index.ts
 ```
