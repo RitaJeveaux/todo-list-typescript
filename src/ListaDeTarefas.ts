@@ -35,8 +35,9 @@ export class ListaDeTarefas {
       const status = tarefa.concluida ? "[X]" : "[ ]";
       let linha = `${status} ${tarefa.id}: ${tarefa.descricao}`;
       if (tarefa instanceof TarefaComDataLimite) {
-        linha += `Data Limite: ${this.formatarData(tarefa.dataLimite)}`
+        linha += ` Data Limite: ${this.formatarData(tarefa.dataLimite)}`
       }
+      console.log(linha);
     });
     console.log("-------------------------------------");
   }
