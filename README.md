@@ -32,16 +32,27 @@ Para isso vamos precisar dos seguintes recursos instalados no computador:
 - Sobrescreva o método `listarTarefas` na classe `ListaDeTarefas` para que, se a tarefa for uma `TarefaComDataLimite`, exiba também a data limite formatada (ex: `(Entregar até: DD/MM/AAAA)`).
 
 
-### Comandos
+## Como Executar
 
+1.  **Pré-requisitos**: Certifique-se de ter o Node.js instalado em sua máquina.
 
-Para instalar o projeto:
+2.  **Instalar dependências**: No diretório raiz do projeto, execute o comando para instalar os pacotes necessários:
+    ```bash
+    npm install
+    ```
 
-```sh
+3.  **Executar a simulação**: Para rodar o script principal que simula as operações bancárias, utilize:
+    ```bash
+    npx ts-node src/index.ts
+    ```
+
+## Comandos para iniciar um projeto do zero:
+ ```bash
 npm init -y
 npm i typescript ts-node @types/node --save-dev
 npx tsc --init
-```
+  ```
+
 
 
 Para executar o projeto:
