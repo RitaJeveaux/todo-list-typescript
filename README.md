@@ -52,11 +52,3 @@ npm init -y
 npm i typescript ts-node @types/node --save-dev
 npx tsc --init
   ```
-
-
-
-Para executar o projeto:
-
-```sh
-npx ts-node src/index.ts
-```
